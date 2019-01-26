@@ -11,18 +11,22 @@ var shortid = require("shortid");
 
 
 router.post('/register', (req, res, next) => {
-
+ 
   var id = shortid.generate();
-
-  username = req.body.username;
-  User.getUserByUsername(username, (err, user) => {
+ 
+  User.getUserByUsername(req.body.username, (err, user) => {
     if (err) throw err;
-    if (user.username==username) {
-      return res.json({
-        success: false,
-        msg: 'User exists already,make use of another name'
-      });
+    console.log(user)
+    if (user !== null) {
+      if (user.username==username) {
+        return res.json({
+          success: false,
+          msg: 'User exists already,make use of another name'
+        });
+      }
+  
     }
+  
   let newUser = new User({
     userid:id,
     name: req.body.name,
