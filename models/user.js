@@ -115,9 +115,9 @@ module.exports.removefriend = function(username, name_of_friend, callback) {
 
 
 //get all users
-module.exports.getusers=function ({},callback){
+module.exports.getusers=function (value,callback){
 
-  User.find({},callback);
+  User.find(value,callback);
 
 }
 
