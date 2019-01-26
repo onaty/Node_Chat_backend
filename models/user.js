@@ -57,6 +57,7 @@ module.exports.getUserByUsername = function(username, callback) {
   const query = {
     username: username
   }
+  console.log(query)
   User.findOne(query, callback);
 }
 
