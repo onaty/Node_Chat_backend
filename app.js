@@ -70,10 +70,12 @@ const users = require('./routes/users');
 app.use(cors());
 
 app.use(cors({
-  origin: ["http://192.168.0.100:4200"]
+  origin: ["https://onaty-chatapp.herokuapp.com"]
+  // origin: ["http://192.168.0.100:4200"]
 }));
 app.use(cors({
-  origin: ["http://192.168.0.100:4200"],
+  // origin: ["http://192.168.0.100:4200"],
+  origin: ["https://onaty-chatapp.herokuapp.com"],
   credentials: true
 }));
 
