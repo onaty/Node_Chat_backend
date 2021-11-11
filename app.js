@@ -2,6 +2,7 @@
 // //     cd documents/projects/meanchat/chatfront
 //  ng add @ng-bootstrap/schematics
 //                       chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+lawn flush aim deliver weird ask glass angry wall business unlock staff
 const express = require('express');
 var app = require('express')();
 const path = require('path');
